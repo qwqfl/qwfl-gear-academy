@@ -31,7 +31,7 @@ mod tests {
         println!("{:?}", state);
         assert_eq!(state.pebbles_count, 10);
         assert_eq!(state.max_pebbles_per_turn, 3);
-        assert!(state.pebbles_remaining == 10 || state.pebbles_remaining < 10); // Adjust based on initial player
+        assert!(state.pebbles_remaining <= 10); // Adjust based on initial player
         assert!(state.first_player == Player::User || state.first_player == Player::Program);
     }
 
