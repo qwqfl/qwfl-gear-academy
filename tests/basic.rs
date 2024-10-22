@@ -1,6 +1,5 @@
 #[cfg(test)]
 mod tests {
-    use super::*;
     use gstd::prelude::*;
     use gtest::{Program, System};
     use pebbles_game_io::*;
@@ -9,7 +8,7 @@ mod tests {
         let sys = System::new();
         sys.init_logger();
         let user_id = 1; // User ID
-        sys.mint_to(user_id, 10000000000000); // Initialize user balance
+        sys.mint_to(user_id, 10000000000000); 
         (sys, user_id)
     }
 
